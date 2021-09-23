@@ -1,0 +1,26 @@
+{
+  "name": "koa-template-mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": "./bin/index.js",
+  "files": [
+    "bin",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "rm -rf app && node index.js",
+    "test-g": "rm -rf app && koa-template-mini"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.6",
+    "execa": "^5.1.1",
+    "inquirer": "^8.1.4",
+    "prettier": "^2.4.0"
+  }
+}

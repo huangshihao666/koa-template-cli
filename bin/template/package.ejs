@@ -1,0 +1,23 @@
+{
+    "name": "<%= config.packageName %>",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+      "serve": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "koa": "^2.13.1"
+      <% if (config.middleware.router) { %>
+        ,"koa-router": "^10.0.0"
+      <% } %>
+      <% if (config.middleware.static) { %>
+        ,"koa-static": "^5.0.0"
+      <% } %>
+    }
+  }
+  
